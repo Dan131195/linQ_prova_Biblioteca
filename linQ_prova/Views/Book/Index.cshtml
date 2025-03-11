@@ -1,0 +1,42 @@
+﻿@model BooksListViewModel
+
+@{
+	ViewData["Title"] = "LIbri";
+}
+
+@* <a class="btn btn-primary p-2 m-2" asp-controller="Book" asp-action="Add">Aggiungi un libro</a> *@
+
+@if(Model.Books.Count() >= 0)
+{
+	<div class="row">
+		<div class="col-md-4">
+			<p>Titolo</p>
+		</div>
+		<div class="col-md-4">
+			<p>Autore</p>
+		</div>
+		<div class="col-md-4">
+			<p>Genere</p>
+		</div>
+	</div>
+	@foreach(var book in Model.Books)
+	{
+		<div class="row">
+			<div class="col-md-4">
+				<p>@book.Titolo</p>
+			</div>
+			<div class="col-md-4">
+				<p>@book.Autore</p>
+			</div>
+			<div class="col-md-4">
+				<p>@book.Genere</p>
+			</div>
+		</div>
+	}
+}
+else
+{
+	<p class="text-danger">Books no found!</p>
+}
+
+<h1>Ciao</h1>
