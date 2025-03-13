@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace linQ_prova.Migrations
 {
     /// <inheritdoc />
-    public partial class Inital : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,7 +19,7 @@ namespace linQ_prova.Migrations
                     Titolo = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Autore = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Genere = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Disponibilità = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Disponibilita = table.Column<bool>(type: "bit", nullable: true),
                     ImmagineCopertina = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>

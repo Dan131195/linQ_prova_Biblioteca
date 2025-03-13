@@ -1,0 +1,31 @@
+﻿@model AddBookViewModel
+
+@{
+	ViewData["Title"] = "Aggiungi libro";
+}
+
+<h2 class="text-center">Aggiungi un libro</h2>
+
+<form class="" method="post" asp-asp-controller="Book" asp-action="Add">
+	<div class="mb-3">
+		<label for="titolo" class="form-label">Titolo</label>
+		<input id="titolo" type="text" class="form-control" asp-for="Titolo"/>
+	</div>
+	<div class="mb-3">
+		<label for="autore" class="form-label">Autore</label>
+		<input id="autore" type="text" class="form-control" asp-for="Autore" />
+	</div>
+	<div class="mb-3">
+		<label for="genere" class="form-label">Genere</label>
+		<input id="genere" type="text" class="form-control" asp-for="Genere" />
+	</div>
+
+	@* ----------------------- *@
+	@* Immagine Copertina da aggiungere in seguito *@
+
+	@* <div class="mb-3"> *@
+	@* 	<label for="title" class="form-label">Titolo</label> *@
+	@* 	<input id="title" type="text" class="form-control" /> *@
+	@* </div> *@
+	<button class="btn btn-success p-2 px-3 my-2">Salva</button>
+</form>

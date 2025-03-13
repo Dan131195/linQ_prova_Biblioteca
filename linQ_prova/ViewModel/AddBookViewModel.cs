@@ -1,11 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace linQ_prova.Models
+namespace linQ_prova.ViewModel
 {
-    public class Book
+    public class AddBookViewModel
     {
-        [Key]
-        public Guid Id { get; set; }
         [Required]
         [StringLength(50)]
         public required string Titolo { get; set; }
@@ -18,6 +16,5 @@ namespace linQ_prova.Models
 
         public bool? Disponibilita { get; set; }
         public string? ImmagineCopertina { get; set; }
-
     }
 }

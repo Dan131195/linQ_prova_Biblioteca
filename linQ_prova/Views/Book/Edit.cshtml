@@ -1,0 +1,24 @@
+﻿@model EditBookViewModel
+
+@{
+	ViewData["Title"] = "Modifica il libro";
+}
+
+<h2 class="text-center">Modifica un libro</h2>
+
+<form class="" method="post" asp-controller="Book" asp-action="Edit">
+	<div class="mb-3">
+		<label for="titolo" class="form-label">Titolo</label>
+		<input id="titolo" type="text" class="form-control" asp-for="Titolo" />
+	</div>
+	<div class="mb-3">
+		<label for="autore" class="form-label">Autore</label>
+		<input id="autore" type="text" class="form-control" asp-for="Autore" />
+	</div>
+	<div class="mb-3">
+		<label for="genere" class="form-label">Genere</label>
+		<input id="genere" type="text" class="form-control" asp-for="Genere" />
+	</div>
+
+	<button class="btn btn-success p-2 px-3 my-2">Salva</button>
+</form>

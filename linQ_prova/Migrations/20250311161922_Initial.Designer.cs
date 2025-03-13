@@ -12,8 +12,8 @@ using linQ_prova.Data;
 namespace linQ_prova.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250311140637_Inital")]
-    partial class Inital
+    [Migration("20250311161922_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,8 +36,8 @@ namespace linQ_prova.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Disponibilità")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool?>("Disponibilita")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Genere")
                         .IsRequired()

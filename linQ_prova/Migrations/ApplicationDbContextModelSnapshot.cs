@@ -33,8 +33,8 @@ namespace linQ_prova.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Disponibilità")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool?>("Disponibilita")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Genere")
                         .IsRequired()

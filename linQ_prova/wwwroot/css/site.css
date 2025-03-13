@@ -20,3 +20,17 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+html,
+body,
+main{
+    background-color: darkgray;
+}
+
+.dropdown-item:hover{
+    background-color: dimgray;
+}
+
+.logoImg{
+    border-radius: 50%;
+}

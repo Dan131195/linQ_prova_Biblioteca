@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinQ_prova - @ViewData["Title"]</title>
+    <title>AdC - @ViewData["Title"]</title>
+    <link rel="icon" href="~/logo2.jpg" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/linQ_prova.styles.css" asp-append-version="true" />
 </head>
@@ -12,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">linQ_Prova</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/logo2.jpg" alt="Logo Biblioteca" width="40px"height="40px" class="logoImg me-2"/>L'Albero della Conoscenza</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,6 +26,18 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Book" asp-action="Index">Libri</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <div class="dropdown">
+                                <button class="p-0 bg-transparent border-0 text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Prestiti
+                                </button>
+                                <ul class="dropdown-menu bg-dark">
+                                    <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                                    <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>

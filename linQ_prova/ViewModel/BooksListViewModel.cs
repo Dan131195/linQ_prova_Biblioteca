@@ -4,6 +4,6 @@ namespace linQ_prova.ViewModel
 {
     public class BooksListViewModel
     {
-        public List<Book> Books { get; set; }
+        public List<Book>? Books { get; set; }
     }
 }
